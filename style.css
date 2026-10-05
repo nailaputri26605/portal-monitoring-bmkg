@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f7fb;
+
+    color: #1f2937;
+
+}
+
+
+/* NAVBAR */
+
+header {
+
+    height: 70px;
+
+    background: #0066a1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    color: white;
+
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+}
+
+
+nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 450px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 60px 10%;
+
+    background: linear-gradient(
+        120deg,
+        #0066a1,
+        #008fc5
+    );
+
+    color: white;
+
+}
+
+
+.hero h1 {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+}
+
+
+button {
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #0066a1;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    opacity: 0.9;
+
+}
+
+
+
+/* SECTION */
+
+.section {
+
+    padding: 70px 10%;
+
+}
+
+
+.section h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* GEMPA */
+
+.gempa-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.gempa-card h3 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.gempa-card p {
+
+    margin: 12px 0;
+
+}
+
+
+
+/* CUACA */
+
+.weather-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+
+    gap: 20px;
+
+}
+
+
+.weather-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.weather-card h3 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.temperature {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* TENTANG */
+
+.tentang {
+
+    background: #eaf4fa;
+
+}
+
+
+.tentang p {
+
+    margin-bottom: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+    background: #003b5c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+footer p {
+
+    margin: 5px;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    header {
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    nav {
+
+        gap: 15px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 32px;
+
+    }
+
+}

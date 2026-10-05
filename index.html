@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Monitoring BMKG</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="logo">
+            🌏 BMKG Monitoring
+        </div>
+
+        <nav>
+
+            <a href="#beranda">
+                Beranda
+            </a>
+
+            <a href="#gempa">
+                Gempa
+            </a>
+
+            <a href="#cuaca">
+                Cuaca
+            </a>
+
+            <a href="#tentang">
+                Tentang
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- BERANDA -->
+
+    <section id="beranda"
+             class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Portal Monitoring
+                <br>
+                Gempa & Cuaca Indonesia
+            </h1>
+
+            <p>
+                Menampilkan informasi gempa bumi
+                dan kondisi cuaca Indonesia.
+            </p>
+
+            <button onclick="lihatGempa()">
+                Lihat Gempa Terkini
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- GEMPA -->
+
+    <section id="gempa"
+             class="section">
+
+        <h2>
+            🌋 Gempa Terkini
+        </h2>
+
+        <div id="gempa-container"
+             class="gempa-card">
+
+            <h3>
+                Data Gempa
+            </h3>
+
+            <p>
+                <strong>Magnitude:</strong>
+                <span id="magnitude">
+                    -
+                </span>
+            </p>
+
+            <p>
+                <strong>Lokasi:</strong>
+                <span id="lokasi">
+                    -
+                </span>
+            </p>
+
+            <p>
+                <strong>Kedalaman:</strong>
+                <span id="kedalaman">
+                    -
+                </span>
+            </p>
+
+            <p>
+                <strong>Waktu:</strong>
+                <span id="waktu">
+                    -
+                </span>
+            </p>
+
+            <p>
+                <strong>Potensi:</strong>
+                <span id="potensi">
+                    -
+                </span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CUACA -->
+
+    <section id="cuaca"
+             class="section">
+
+        <h2>
+            🌤️ Informasi Cuaca
+        </h2>
+
+        <div class="weather-container">
+
+
+            <div class="weather-card">
+
+                <h3>
+                    Jakarta
+                </h3>
+
+                <div class="temperature">
+                    31°C
+                </div>
+
+                <p>
+                    Cerah Berawan
+                </p>
+
+            </div>
+
+
+
+            <div class="weather-card">
+
+                <h3>
+                    Bandung
+                </h3>
+
+                <div class="temperature">
+                    24°C
+                </div>
+
+                <p>
+                    Hujan Ringan
+                </p>
+
+            </div>
+
+
+
+            <div class="weather-card">
+
+                <h3>
+                    Bekasi
+                </h3>
+
+                <div class="temperature">
+                    30°C
+                </div>
+
+                <p>
+                    Berawan
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TENTANG -->
+
+    <section id="tentang"
+             class="section tentang">
+
+        <h2>
+            Tentang Portal
+        </h2>
+
+        <p>
+
+            Portal Monitoring BMKG merupakan website
+            yang digunakan untuk menampilkan informasi
+            gempa bumi dan cuaca Indonesia.
+
+        </p>
+
+        <p>
+
+            Data pada website akan terhubung
+            dengan server atau API yang diberikan
+            oleh BMKG.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Sumber Data:
+            Badan Meteorologi, Klimatologi,
+            dan Geofisika (BMKG)
+        </p>
+
+        <p>
+            © 2026 Portal Monitoring BMKG
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
